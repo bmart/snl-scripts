@@ -2,4 +2,5 @@
 
 # setup nvim tutorial docker environment
 
-docker run --hostname share-and-learn --rm -it bmart/nvim-tutorial:latest
+docker run --hostname share-and-learn -it -v tutorialdata:/home/tutorial/.config  bmart/nvim-tutorial:latest
+
